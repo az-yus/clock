@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: #333333;
+}
+
+.clock-wrapper {
+	width: 400px;
+	height: 600px;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #1e1e1e;
+	box-shadow: 0 0 10px 10px;
+}
+
+.clock {
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	background: #1d2b3e;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.clock__center {
+	background: white;
+	width: 2px;
+	height: 2px;
+	display: block;
+}
+
+.clock__number {
+	color: white;
+	font-size: 25px;
+	position: absolute;
+}
+
+.clock__spider {	
+	width: 2px;
+	height: 100%;
+	position: absolute;
+}
+
+.clock__spider::before {
+	content: "";
+	display: block;
+	width: 2px;
+	height: 20px;
+	background: white;
+	margin-top: 10px;
+}
+
+.clock__arrow-second {
+	width: 2px;
+	height: 100%;
+	position: absolute;
+	z-index: 100;
+}
+
+.clock__arrow-minute {
+	width: 2px;
+	height: 100%;
+	position: absolute;
+}
+
+.clock__arrow-hour {
+	width: 2px;
+	height: 100%;
+	position: absolute;
+}
+
+.clock__arrow-second::before {
+	content: "";
+	top: 35%;
+	position: absolute;
+	height: 60%;
+	width: 2px;
+	background: white;
+	z-index: 5;
+}
+
+.clock__arrow-minute::before {
+	content: "";
+	top: 40%;
+	width: 2px;
+	height: 50%;
+	background: black;
+	position: absolute;
+}
+
+.clock__arrow-hour::before {
+	content: "";
+	background: gray;
+	position: absolute;
+	width: 100%;
+	height: 35%;
+	top: 20%;
+}
+
+.clock__twelve {
+	top: 15px;
+}
+.clock__one {
+	transform: rotate(30deg);
+}
+.clock__two {
+	transform: rotate(60deg);
+}
+.clock__three {
+	right: 15px;
+}
+.clock__four {
+	transform: rotate(120deg);
+}
+.clock__five {
+	transform: rotate(150deg);
+}
+.clock__six {
+	bottom: 15px;
+}
+.clock__seven {
+	transform: rotate(210deg);
+}
+.clock__eight {
+	transform: rotate(240deg);
+}
+.clock__nine {
+	left: 15px;
+}
+.clock__ten {
+	transform: rotate(300deg);
+}
+.clock__eleven {
+	transform: rotate(330deg);
+}
+
+.digital {
+	background: #1d2b3e;
+	margin-top: 100px;
+	display: flex;
+	border-radius: 5px;
+}
+.digital__text {
+	font-size: 20px;
+	color: white;
+	padding: 12px;
+}
