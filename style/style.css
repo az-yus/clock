@@ -102,7 +102,7 @@ body {
 
 .clock__arrow-minute::before {
 	content: "";
-	top: 40%;
+	top: 19%;
 	width: 2px;
 	height: 50%;
 	background: black;
