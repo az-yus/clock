@@ -92,7 +92,7 @@ body {
 
 .clock__arrow-second::before {
 	content: "";
-	top: 35%;
+	top: 3%;
 	position: absolute;
 	height: 60%;
 	width: 2px;
